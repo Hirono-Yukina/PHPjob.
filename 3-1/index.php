@@ -1,7 +1,6 @@
 <?php
-$num = 0;
-while($num <100){
-    $num ++;
+$num = 1;
+while($num <=100){
     echo '<br>';
     if($num %3 == 0 && $num %5 == 0){
         echo "FizzBuzz!";
@@ -12,6 +11,6 @@ while($num <100){
     }else{
         echo $num;
     }
+    $num ++;
 }
 ?>
-
