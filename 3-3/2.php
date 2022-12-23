@@ -1,29 +1,32 @@
 <?php
-$my_name = $_GET['number'];
+$number = $_GET['number'];
+$key = str_split($number);
+$rand = array_rand($key,1);
+$rand_num = $key[$rand];
 ?>
 <p> <?php echo date("Y/m/d"); ?>の運勢は</p>
-<p>選ばれた数字は<?php echo mt_rand(1,9); ?></p>
+<p>選ばれた数字は<?php echo $rand_num; ?></p>
 <?php
-$fortune = 0;
-if($fortune == 0){
+$rand_num = 0;
+if($rand_num == 0){
     echo "凶";
-}elseif($fortune == 1){
+}elseif($rand_num == 1){
     echo"小吉";
-}elseif($fortune == 2){
+}elseif($rand_num == 2){
     echo"小吉";
-}elseif($fortune == 3){
+}elseif($rand_num == 3){
     echo"小吉";
-}elseif($fortune == 4){
+}elseif($rand_num == 4){
     echo"中吉";
-}elseif($fortune == 5){
+}elseif($rand_num == 5){
     echo"中吉";
-}elseif($fortune == 6){
+}elseif($rand_num == 6){
     echo"中吉";
-}elseif($fortune == 7){
+}elseif($rand_num == 7){
     echo"吉";
-}elseif($fortune == 8){
+}elseif($rand_num == 8){
     echo"吉";
-}elseif($fortune == 9){
+}elseif($rand_num == 9){
     echo"大吉";
 }
 ?>
