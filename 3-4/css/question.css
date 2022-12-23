@@ -1,0 +1,38 @@
+body{
+    background-color: gray;
+    font-family: serif;
+}
+p{
+    color: #f5f5f5;
+    font-weight: 300px;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 50px;
+}
+h2{
+    color: #f5f5f5;
+    font-weight: 300px;
+    font-size: 17px;
+    text-align: center;
+}
+.from{
+    text-align: center;
+}
+.number{
+    color: #f5f5f5;
+    font-weight: 300px;
+    font-size: 13px;
+    text-align: center;
+}
+.language{
+    color: #f5f5f5;
+    font-weight: 300px;
+    font-size: 13px;
+    text-align: center;
+}
+.command{
+    color: #f5f5f5;
+    font-weight: 300px;
+    font-size: 13px;
+    text-align: center;
+}

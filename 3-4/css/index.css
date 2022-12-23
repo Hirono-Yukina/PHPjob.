@@ -1,0 +1,15 @@
+body{
+    background-color: gray;
+    font-family: serif;
+}
+h1{
+    color:#f5f5f5;
+    font-weight: 300px;
+    font-size: large;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+    margin-top: 100px;
+}
+.from{
+    text-align: center;
+}
