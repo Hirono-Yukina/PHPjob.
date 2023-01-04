@@ -3,6 +3,7 @@
 
 <?php
 $my_name = $_POST['my_name'];
+
 ?>
 
 <p>お疲れ様です <?php echo $my_name; ?>さん</p>
@@ -14,6 +15,7 @@ $my_name = $_POST['my_name'];
         <div class = "number">
             <?php
             $number=["80","22","20","21"];
+            $number_A = $number[0];
             foreach($number as $value){  
                 echo "<input type='radio' name ='number' value = '${value}'> ${value}"; 
             } 
@@ -24,6 +26,7 @@ $my_name = $_POST['my_name'];
             <h2>②Webページを作成するための言語は？</h2>
             <?php 
             $language=["PHP","Python","JAVA","HTML"];
+            $language_A = $language[3];
             foreach($language as $value1){ 
                 echo "<input type='radio' name ='language' value = '${value1}'> ${value1}"; 
             }
@@ -33,7 +36,8 @@ $my_name = $_POST['my_name'];
         <div class = "command">
             <h2>③MySQLで情報を取得するためのコマンドは？</h2>
             <?php
-            $command=["join","select","insert","update"];
+            $command=["join","select","insert","update"];        
+            $command_A= $command[1];
             foreach($command as $value2){ 
                 echo "<input  type='radio' name ='command' value = '${value2}'> ${value2}"; 
             }
@@ -42,6 +46,14 @@ $my_name = $_POST['my_name'];
         <br>
         <input type="submit" style="font-size: 8px;" value="回答する" class="submit"/>
         <input type ="hidden" name ="name" value="<?php echo $my_name; ?> ">
+        <input type = "hidden" name ="number_A" value ="<?php echo $number_A; ?> ">
+        <input type = "hidden" name ="language_A" value ="<?php echo $language_A; ?> ">
+        <input type = "hidden" name ="command_A" value ="<?php echo $command_A; ?> ">
+
+
+
+
+
     </form>
 </div>
 
