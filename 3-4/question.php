@@ -45,10 +45,10 @@ $my_name = $_POST['my_name'];
         </div>
         <br>
         <input type="submit" style="font-size: 8px;" value="回答する" class="submit"/>
-        <input type ="hidden" name ="name" value="<?php echo $my_name; ?> ">
-        <input type = "hidden" name ="number_A" value ="<?php echo $number_A; ?> ">
-        <input type = "hidden" name ="language_A" value ="<?php echo $language_A; ?> ">
-        <input type = "hidden" name ="command_A" value ="<?php echo $command_A; ?> ">
+        <input type ="hidden" name ="name" value="<?php echo $my_name; ?>">
+        <input type = "hidden" name ="number_A" value ="<?php echo $number_A; ?>">
+        <input type = "hidden" name ="language_A" value ="<?php echo $language_A; ?>">
+        <input type = "hidden" name ="command_A" value ="<?php echo $command_A; ?>">
 
 
 
