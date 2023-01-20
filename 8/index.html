@@ -41,27 +41,23 @@
 
     <script>
         function changeLang(){
-            let en = document.getElementsById('tr_en');
-            let jpn = document.getElementsById('tr_jpn');
-            if (document.getElementById('select')){
-                id = document.getElementById('select').Value;
-                if(id === '日本語'){
-                    jpn.style.display = '';
-                    en.style.display = 'none';
-                }else if(id === 'English'){
-                    en.style.display = '';
-                    jpn.style.display = 'none';
-                }else if(id === '全て表示'){
-                    en.style.display = '';
-                    jpn.style.display = '';
-                }else{
-                    jpn.style.display = 'none';
-                    en.style.display = 'none';
-                }
+            let en = document.getElementById('tr_en');
+            let jpn = document.getElementById('tr_jpn');
+            let id = document.getElementsByTagName('select');
+            if(id === '日本語'){
+                jpn.style.display = '';
+                en.style.display = 'none';
+            }else if(id === 'English'){
+                en.style.display = '';
+                jpn.style.display = 'none';
+            }else if(id === '全て表示'){
+                en.style.display = '';
+                jpn.style.display = '';
+            }else{
+                jpn.style.display = 'none';
+                en.style.display = 'none';
             }
         }
-        changeLang();
-        //①onchangeで使用されている関数の中身を実装してください。
     </script>
 </body>
 </html>
