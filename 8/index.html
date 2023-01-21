@@ -43,7 +43,7 @@
         function changeLang(){
             let en = document.getElementById('tr_en');
             let jpn = document.getElementById('tr_jpn');
-            let id = document.getElementsByTagName('select');
+            let id = document.getElementsByTagName('select')[0].value;
             if(id === '日本語'){
                 jpn.style.display = '';
                 en.style.display = 'none';
