@@ -1,0 +1,47 @@
+.header{
+   
+   
+    display: flex;
+}
+.left{ 
+    height: 120px;
+    width: 200px;
+}
+.pic{
+    display: block;
+    height: 120px;
+    width: 200px;
+}
+.right{
+    background-color: red;
+    height: 120px;
+    width: 800px;
+}
+.right1{
+    background-color: #87ceeb;
+    height: 60px;
+    width: 800px;
+}
+.right2{
+    background-color: #00ffff;
+    height: 60px;
+    width: 800px;
+}
+.main{
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+
+.column{
+    background-color: #87ceeb;
+}
+.record{
+    background-color: #e0ffff;
+
+}
+.footer{
+    background-color: #00ced1;
+    height: 50px;
+    width: 1000px;
+}
