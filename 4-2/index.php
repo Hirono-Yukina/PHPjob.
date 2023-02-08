@@ -17,7 +17,7 @@ $postdata = $data->getPostData();
 <body>
     <div class = "header">
         <div class = "left">
-            <img src="LetsEngineer\PHPjob\4-2\1599315827_logo.png" class = "pic">
+            <img src="1599315827_logo.png" class = "pic">
         </div>
         <div class = right>
             <div class = "right1">ようこそ<?php echo $userdata["last_name"].$userdata["first_name"]?>さん</div>
