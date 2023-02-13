@@ -1,0 +1,21 @@
+body{
+    margin-left: 50px;
+}
+h2{
+    margin-bottom: auto;
+}
+.button{
+    background-color: rgb(33, 154, 190);
+    color: white;
+    border: none;
+    border-radius : 5%; 
+    width: 125px;
+    height: 25px;
+    margin-top: 13px;
+}
+form{
+    line-height: normal;
+}
+h4{
+    margin-bottom: 13px;
+}

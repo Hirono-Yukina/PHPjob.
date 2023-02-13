@@ -1,0 +1,17 @@
+.button{
+    background-color: rgb(83, 145, 226);
+    color: white;
+    border-radius : 5%; 
+    border: none;
+    margin-top: 15px;
+    width: 150px;
+    height: 30px;
+}
+.top{
+    margin: auto;
+    width: 300px;
+}
+.main{
+    margin: auto;
+    width: 300px;
+}

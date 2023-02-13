@@ -1,0 +1,53 @@
+.all{
+    margin-left: 285px;
+    margin-top: 50px;
+}
+h2{
+    line-height: 5px;
+}
+.btn1{
+    background-color: rgb(33, 154, 190);
+    color: white;
+    border: none;
+    border-radius : 5%; 
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+}
+.btn2{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius : 5%; 
+    width: 80px;
+    height: 25px;
+    font-size: 12px;
+
+}
+.btn3{
+    background-color: red;
+    border: none;
+    border-radius : 5%; 
+} 
+a:link{
+    color: white;
+    text-decoration: none
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+table th, table td {
+    border: solid 1px rgb(213, 213, 236);
+    width: 100px;
+    height: 20px;
+  }
+table th{
+    background-color: rgb(213, 213, 236);
+    font-size: small;
+}
+br {
+    display: block;
+    content: "";
+    height: 5px;
+    }
