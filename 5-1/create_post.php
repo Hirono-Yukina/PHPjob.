@@ -13,27 +13,27 @@ if (isset($_POST["post"])) {
     // titleとcontentの入力チェック
     if (empty($_POST["title"])) {
         echo 'タイトルが未入力です。';
-    } elseif (empty($_POST["coctent"])) {
+    } elseif (empty($_POST["content"])) {
         echo 'コンテンツが未入力です。';
     }
 
-    if (!empty($_POST['title']) && !empty($_POST['coctent'])) {
+    if (!empty($_POST['title']) && !empty($_POST['content'])) {
         // 入力したtitleとcontentを格納
         $username = htmlspecialchars($_POST['title'],ENT_QUOTES);
-        $password = htmlspecialchars($_POST['coctent'],ENT_QUOTES);
+        $password = htmlspecialchars($_POST['content'],ENT_QUOTES);
 
         // PDOのインスタンスを取得
         $pdo = db_connect();
 
         try {
             // SQL文の準備
-            $sql = "INSERT INTO post (title, coctent) VALUES (:title, :coctent)";
+            $sql = "INSERT INTO posts (title, content) VALUES (:title, :content)";
             // プリペアドステートメントの準備
             $stmt = $pdo->prepare($sql);
             // タイトルをバインド
             $stmt->bindParam(':title',$username);
             // 本文をバインド
-            $stmt->bindParam(':coctent',$username);
+            $stmt->bindParam(':content',$username);
             $stmt->execute();
             // main.phpにリダイレクト
             header("Location: main.php");
@@ -59,7 +59,7 @@ if (isset($_POST["post"])) {
         <input type="text" name="title" id="title" style="width:200px;height:50px;">
         <br>
         content:<br>
-        <input type="text" name="coctent" id="coctent" style="width:200px;height:100px;"><br>
+        <input type="text" name="content" id="content" style="width:200px;height:100px;"><br>
         <input type="submit" value="submit" id="post" name="post">
     </form>
 </body>

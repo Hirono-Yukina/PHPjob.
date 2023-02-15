@@ -20,7 +20,7 @@ if (empty($_SESSION["user_name"])) {
 }
 try {
     // booksの全レコードを、id降順で取得するクエリを設定
-    $sql = "SELECT * FROM post ORDER BY id DESC";
+    $sql = "SELECT * FROM posts ORDER BY id DESC";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
 } catch (PDOException $e) {
@@ -41,19 +41,21 @@ try {
     <a href="logout.php">ログアウト</a>
     <table>
         <tr>
-            <th>記事ID</th>
-            <th>タイトル</th>
-            <th>本文</th>
-            <th>投稿日</th>
-            <th></th>
-            <th></th>
+            <td>記事ID</td>
+            <td>タイトル</td>
+            <td>本文</td>
+            <td>投稿日</td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
         <?php  while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {?>
                 <tr>
                     <td><?php echo $row['id']; ?></td>
                     <td><?php echo $row['title']; ?></td>
-                    <td><?php echo $row['coctent']; ?></td>
+                    <td><?php echo $row['content']; ?></td>
                     <td><?php echo $row['time']; ?></td>
+                    <td><a href="detail_post.php?id=<?php echo $row['id']; ?>">詳細</a></td>
                     <td><a href="edit_post.php?id=<?php echo $row['id']; ?>">編集</a></td>
                     <td><a href="delete_post.php?id=<?php echo $row['id']; ?>">削除</a></td>
                 </tr>
